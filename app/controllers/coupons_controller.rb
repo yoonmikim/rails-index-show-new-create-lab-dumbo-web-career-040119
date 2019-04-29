@@ -4,8 +4,20 @@ class CouponsController < ActionController::Base
   def index 
     @coupons = Coupon.all 
   end 
+
+  def new 
+    @coupon = Coupon.new 
+  end
+  
   
   def create 
+    @coupon = Coupon.create(coupon_params)
+  end
+  
+  private 
+  
+  def coupon_params
+    params.require(:coupon).permit()
   end
   
 end
