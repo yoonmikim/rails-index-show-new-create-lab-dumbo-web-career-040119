@@ -14,6 +14,10 @@ class CouponsController < ActionController::Base
     @coupon = Coupon.create(coupon_params)
   end
   
+  def edit 
+    
+  end
+  
   private 
   
   def coupon_params
