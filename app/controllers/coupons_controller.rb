@@ -12,6 +12,7 @@ class CouponsController < ActionController::Base
   
   def create 
     @coupon = Coupon.create(coupon_params)
+    redirect_to @coupon
   end
   
   def edit 
