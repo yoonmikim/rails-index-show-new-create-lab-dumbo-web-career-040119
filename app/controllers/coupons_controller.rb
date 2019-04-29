@@ -19,6 +19,9 @@ class CouponsController < ActionController::Base
     
   end
   
+  def update 
+  end
+  
   private 
   
   def coupon_params
