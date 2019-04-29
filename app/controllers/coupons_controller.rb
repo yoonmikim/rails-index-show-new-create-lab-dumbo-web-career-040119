@@ -24,4 +24,8 @@ class CouponsController < ActionController::Base
     params.require(:coupon).permit(:coupon_code, :store)
   end
   
+  def get_coupon
+    @coupon = Coupon.find(params[:id])
+  end
+  
 end
