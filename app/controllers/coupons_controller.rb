@@ -5,6 +5,10 @@ class CouponsController < ActionController::Base
     @coupons = Coupon.all 
   end 
 
+  def show 
+    @coupon = Coupon.find(params[:id])
+  end
+
   def new 
     @coupon = Coupon.new 
   end
