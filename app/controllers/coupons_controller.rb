@@ -20,7 +20,8 @@ class CouponsController < ActionController::Base
   end
   
   def update 
-    @coupon.update 
+    @coupon.update(coupon_params)
+    redirect_to @coupon
   end
   
   private 
