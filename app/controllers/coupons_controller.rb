@@ -20,6 +20,7 @@ class CouponsController < ActionController::Base
   end
   
   def update 
+    @coupon.update 
   end
   
   private 
